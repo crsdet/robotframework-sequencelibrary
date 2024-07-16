@@ -1,0 +1,34 @@
+---
+name: Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        version: ['3.8', '3.9', '3.10', '3.11']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python ${{ matrix.version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.version }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: robot -P src -d results tests
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-python${{ matrix.version }}
+          path: results
