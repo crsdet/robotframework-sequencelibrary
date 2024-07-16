@@ -1,0 +1,16 @@
+[tool.robocop]
+exclude = ["0201", "0202"]
+
+[tool.robotidy]
+transform = [
+    "NormalizeNewLines",
+    "AlignSettingsSection",
+    "AlignVariablesSection",
+    "AlignKeywordsSection",
+    "AlignTestCasesSection",
+    "SplitTooLongLine"
+]
+configure = [
+    "NormalizeNewLines:consecutive_lines=0",
+    "AlignVariablesSection:up_to_column=4"
+]

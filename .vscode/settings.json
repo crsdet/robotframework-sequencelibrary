@@ -1,0 +1,16 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    },
+    "[robotframework]": {
+        "editor.defaultFormatter": "robocorp.robotframework-lsp",
+        "editor.formatOnSave": true
+    },
+    "robot.codeFormatter": "robotidy",
+    "robot.lint.robocop.enabled": true
+}
