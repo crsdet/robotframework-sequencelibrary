@@ -1,3 +1,41 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robotframework-sequencelibrary"
+version = "1.0.0"
+dependencies = [
+    "robotframework"
+]
+requires-python = ">=3.8"
+authors = [
+    { name="Mauricio Gutiérrez", email="103621275+crsdet@users.noreply.github.com" },
+]
+description = "Robot Framework library for running keywords in sequence."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["robotframework"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Framework :: Robot Framework :: Library",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Homepage = "https://github.com/crsdet/robotframework-sequencelibrary"
+Issues = "https://github.com/crsdet/robotframework-sequencelibrary/issues"
+Source = "https://github.com/crsdet/robotframework-sequencelibrary"
+Documentation = "https://crsdet.github.io/robotframework-sequencelibrary/"
+
+[tool.setuptools]
+package-dir = { ""="src"}
+packages = ["SequenceLibrary"]
+
 [tool.robocop]
 exclude = ["0201", "0202"]
 

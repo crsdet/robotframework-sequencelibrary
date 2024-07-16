@@ -164,3 +164,4 @@ cython_debug/
 # Custom
 *.html
 *.xml
+!docs/*.html
