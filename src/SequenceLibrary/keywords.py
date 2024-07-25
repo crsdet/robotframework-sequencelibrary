@@ -26,12 +26,13 @@ class SequenceKeywords:
 
         Example:
         | ${str} | `Run Sequence` |
-        | ... | `Name ` |
+        | ... | `Name` |
         | ... | AND |
         | ... | `Catenate` | SEPARATOR=${SPACE} | Hi, | $_. |
+        | ... | AND |
         | ... | `Log` |
         =>
-        | ${str} = Hi, John Doe. |
+        | ${str} = Hi, John Doe.
 
         The last value returned by a keyword that is not None is returned at the end
         of the sequence.

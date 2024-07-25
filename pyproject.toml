@@ -4,21 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "robotframework-sequencelibrary"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
     "robotframework"
 ]
 requires-python = ">=3.8"
 authors = [
-    { name="Mauricio Gutiérrez", email="103621275+crsdet@users.noreply.github.com" },
+    { name="Mauricio Gutierrez" },
 ]
 description = "Robot Framework library for running keywords in sequence."
 readme = "README.md"
-license = { file = "LICENSE" }
+license = { text = "MIT License" }
 keywords = ["robotframework"]
 classifiers = [
-    "License :: OSI Approved :: MIT License",
     "Framework :: Robot Framework :: Library",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -27,10 +27,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/crsdet/robotframework-sequencelibrary"
-Issues = "https://github.com/crsdet/robotframework-sequencelibrary/issues"
-Source = "https://github.com/crsdet/robotframework-sequencelibrary"
 Documentation = "https://crsdet.github.io/robotframework-sequencelibrary/"
+Homepage = "https://github.com/crsdet/robotframework-sequencelibrary"
 
 [tool.setuptools]
 package-dir = { ""="src"}
